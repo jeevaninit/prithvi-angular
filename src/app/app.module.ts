@@ -61,6 +61,11 @@ import { LoginComponent } from './login/login.component';
 import { AngularformsComponent } from './angularforms/angularforms.component';
 import { AngularReactiveFormComponent } from './angular-reactive-form/angular-reactive-form.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { AfterviewinitComponent } from './afterviewinit/afterviewinit.component';
+import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.component';
+import { ObservableComponent } from './observable/observable.component';
+import { BehaviorsubjectComponent } from './behaviorsubject/behaviorsubject.component';
+import { JustsubjectComponent } from './justsubject/justsubject.component';
 
 
 
@@ -114,6 +119,11 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     AngularformsComponent,
     AngularReactiveFormComponent,
     LifecycleComponent,
+    AfterviewinitComponent,
+    AftercontentinitComponent,
+    ObservableComponent,
+    BehaviorsubjectComponent,
+    JustsubjectComponent,
 
 
   ],

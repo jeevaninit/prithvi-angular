@@ -8,6 +8,13 @@ import {ViewchildComponent} from './viewchild/viewchild.component'
 })
 export class AppComponent {
 
+  counter=10;
+
+  updatecounter(){
+    this.counter+1;
+  }
+
+
 message:any='Hello am from parent data... '
 
 pd=''
@@ -21,5 +28,7 @@ pd=''
     /* this.addpersondata.push(this.pd); */
     this.pd=''
   }
+
+
 }
 

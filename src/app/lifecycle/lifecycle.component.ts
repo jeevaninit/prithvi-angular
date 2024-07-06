@@ -5,22 +5,24 @@ import { Component,OnChanges, SimpleChanges,Input, OnInit, DoCheck } from '@angu
   templateUrl: './lifecycle.component.html',
   styleUrls: ['./lifecycle.component.css']
 })
-export class LifecycleComponent implements DoCheck{
+export class LifecycleComponent {
 
-  @Input() parentdata:any
+  
+
+/*   @Input() parentdata:any
 constructor(){
   console.log('Hi am from constructor...');
   console.log(this.parentdata);
-}
+} */
 
 /*  ngOnInit(): void {
     console.log('Hello am from NgOnInIt....')
     console.log(this.parentdata);
 }  */
 
-    ngDoCheck(): void {
+/*     ngDoCheck(): void {
         console.log('Hi am from ng DoCheck...')
 
     }
-    @Input() pd:any
+    @Input() pd:any */
  }
