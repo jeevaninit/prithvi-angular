@@ -1,0 +1,11 @@
+nav ul li {
+    display: inline-block;
+    flex-direction: row;
+    padding: 0px 20px;
+    line-height: 40px;
+    background-color: lightgreen;
+}
+nav {
+    line-height: 40px;
+    background-color: lightgreen;
+}

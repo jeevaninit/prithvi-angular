@@ -6,7 +6,6 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
@@ -66,13 +65,16 @@ import { AftercontentinitComponent } from './aftercontentinit/aftercontentinit.c
 import { ObservableComponent } from './observable/observable.component';
 import { BehaviorsubjectComponent } from './behaviorsubject/behaviorsubject.component';
 import { JustsubjectComponent } from './justsubject/justsubject.component';
-
+import { HeaderContentComponent } from './lalith_angular_201024/header-content/header-content.component';
+import { NavbarlalithComponent } from './navbarlalith/navbarlalith.component';
+import { BodylalithComponent } from './bodylalith/bodylalith.component';
+import { FooterlalithComponent } from './footerlalith/footerlalith.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
+
     ContactComponent,
     AttributeBindingComponent,
     StyleBindingComponent,
@@ -124,6 +126,10 @@ import { JustsubjectComponent } from './justsubject/justsubject.component';
     ObservableComponent,
     BehaviorsubjectComponent,
     JustsubjectComponent,
+    HeaderContentComponent,
+    NavbarlalithComponent,
+    BodylalithComponent,
+    FooterlalithComponent,
 
 
   ],
