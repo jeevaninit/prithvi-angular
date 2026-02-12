@@ -1,0 +1,124 @@
+ h2 {
+    color: #590d22;
+    text-align: left;
+}
+
+ul li {
+    text-align: left;
+}
+ul li a {
+    text-decoration: none;
+   color: #590d22; 
+}
+/*
+.footernewsletter {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+height: 60px;
+border-bottom: dotted 1px #eee;
+margin-bottom: 20px;
+}
+.footernewsletter input {
+    height: 30px;
+    border-radius: 40px;
+}
+.socialmedia p{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 10px;
+}
+ */
+
+ .footercontainer {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 40px 0 0 0;
+  color: #590d22;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footernewsletter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footernewsletter input[type="text"] {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: border 0.2s;
+  font-size: 1rem;
+}
+
+.footernewsletter input[type="text"]:focus {
+  border: 1.5px solid #6366f1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.col-12, .col-sm-12, .col-md-6, .col-lg-3 {
+  flex: 1 1 220px;
+  min-width: 220px;
+  margin-bottom: 24px;
+}
+
+.socialmedia h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #6366f1;
+  letter-spacing: 1px;
+}
+
+.socialmedia ul, .socialmedia div {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socialmedia li {
+  margin-bottom: 8px;
+  transition: color 0.2s;
+}
+
+.socialmedia a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.socialmedia a:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+.socialmedia mat-icon {
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #6366f1;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .col-12, .col-sm-12, .col-md-6, .col-lg-3 {
+    min-width: 100%;
+  }
+}

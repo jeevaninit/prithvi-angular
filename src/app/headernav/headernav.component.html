@@ -1,9 +1,23 @@
 <nav>
-    <img src="{{path}}" alt="">
-    <ul>
-        <li *ngFor="let item of menuitems">
-        {{item}}
-        </li>
-    </ul>
+    <a routerLink="/">
+    <img src="{{ path }}" alt="">
+    </a>
 
-</nav>
+    <div class="menulayout">
+
+      <button class="menugridicon" (click)="menupopup()"><i class="bi bi-grid-3x3-gap-fill" style="font-size: xx-large;"></i> Menu</button>
+
+  </div>
+
+  </nav>
+
+  <ul *ngIf="show" class="menuitemlayout">
+
+    <span (click)="closepopup()" class="close-menu-button">
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="closeoverly"></mat-icon>
+  </span>
+
+    <li *ngFor="let item of menuitems">
+      <a [routerLink]="item.path" (click)="hideMenu()">{{ item.label }}</a>
+    </li>
+  </ul>

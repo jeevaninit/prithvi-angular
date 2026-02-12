@@ -1,4 +1,6 @@
-<h1>Users List</h1>
+<div class="pageheading"><h2>Business-Solutions</h2></div>
+
+
 <div *ngFor="let ulist of usersData" class="listdiv">
     <li>
         {{ulist.name}}
@@ -9,3 +11,5 @@
     </a>
     </span>
 </div>
+
+<router-outlet></router-outlet>

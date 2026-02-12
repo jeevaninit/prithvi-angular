@@ -6,14 +6,16 @@ import { UserdataService } from '../userdata.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnDestroy{
-contact:string='ITproSkillSet-Dilsukhnagar';
+export class ContactComponent {
+contact:string='More information Please Contact';
 
 constructor(private servicedata:UserdataService){}
 
-mypdata=this.servicedata.mypersonaldata;
+mypdata:any[]=this.servicedata.mypersonaldata;
 
-ngOnDestroy(): void {
+
+
+/* ngOnDestroy(): void {
     alert('exit form contact page...')
-}
+} */
 }
