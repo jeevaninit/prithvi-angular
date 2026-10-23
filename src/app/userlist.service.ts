@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
 export class UserlistService {
 
   constructor() { }
+
+  url:string='https://jsonplaceholder.typicode.com/users';
+  
 userslist=[
   {
       "id": 1,

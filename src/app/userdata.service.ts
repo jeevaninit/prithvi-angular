@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class UserdataService {
 
-  mypersonaldata:any=['Jeevan Konduru','FullStack Developer','13 Years'];
+  mypersonaldata:any=[{name:'Jeevan IT Solutions',
+    course:'Opp. Konark Theater, Near Dilsukhnagar Metro Station, Beside Shipi Restourent, Dilsukhnagar, Hyderabad - 060',
+    experience:'9493108933',
+    email:'jeevanitinfo@gmail.com',
+  }];
+
   fruits:any=['Banana','cherry','Orange'];
   course:string='Angular-8Am';
 

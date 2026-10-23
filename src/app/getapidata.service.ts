@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class GetapidataService {
 url='https://jsonplaceholder.typicode.com/users';
 url2='https://jsonplaceholder.typicode.com/posts';
+
 userdata=[
   {
       "id": 1,
@@ -54,6 +55,7 @@ userdata=[
           "bs": "synergize scalable supply-chains"
       }
   }]
+  
   constructor(private http:HttpClient) { }
 
   userDetails(){

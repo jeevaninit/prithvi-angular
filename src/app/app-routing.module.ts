@@ -14,8 +14,42 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
+import { MyservicesComponent } from './myservices/myservices.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { IndustriesComponent } from './industries/industries.component';
+import { AboutComponent } from './about/about.component';
+import { BannerComponent } from './banner/banner.component';
+import { SarathComponent } from './sarath/sarath.component';
 
 const routes: Routes = [
+  {path:'',
+    component:BannerComponent
+  },
+  {
+    path:'business-solutions',
+    component:UserslistComponent
+  },
+  {
+    path:'myservices',
+    component:MyservicesComponent
+  },
+  {
+    path:'technologies',
+    component:TechnologiesComponent
+  },
+  {
+    path:'industries',
+    component:SarathComponent
+  },
+  {
+    path:'about',
+    component:AboutComponent
+  },
+  {
+    path:'contact',
+    component:ContactComponent
+  },
+
 {path:'AttributeBinding',
   component:AttributeBindingComponent
 },
@@ -66,6 +100,7 @@ component:LoginComponent
       path:'childtwo',
       component:ChildtwoComponent
     },
+    { path: '', redirectTo: '/business-solutions', pathMatch: 'full' },
   ]
 }
 ];

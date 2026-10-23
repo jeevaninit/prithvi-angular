@@ -1,0 +1,60 @@
+
+    <div class="footercontainer">
+
+        <div class="footernewsletter">
+            <p>Subscribe to our Newsletter : <input type="text" size="40"></p>
+            
+        </div>
+
+    <div class="container text-center">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 socialmedia">
+             
+                <p>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="email"></mat-icon>
+                    info@jeevanit.com</p>
+
+                <p>
+                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="YouTube-Icon"></mat-icon>
+                    youtube/@jeevanit</p>
+                <p><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="facebook"></mat-icon>facebook/@jeevanit</p>
+                <p>Privacy Policy - Copyright@2016-2025 jeevan i technologies</p>
+              </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 socialmedia">
+            <h2>Navigate</h2>
+            <ul>
+                <li *ngFor="let item of menuitems" style="text-align: left;margin-left: -15px;">
+                  <a [routerLink]="item.path" style="color: 'black' !important;">{{ item.label }}</a>
+                </li>
+              </ul>
+          </div>
+          
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 socialmedia">
+            <h2>Work by Industry</h2>
+
+            <div *ngFor="let ulist of industrydata" style="text-align: left;">
+                    
+                    <li>{{ulist.title}}</li>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3 socialmedia">
+            <h2>Work by Type</h2>
+
+            <ul style="text-align: left;margin-left: -15px;">
+                <li>Branding </li> 
+                <li>UI & UX Designing</li> 
+                <li>Web Designing and Development </li> 
+                <li>Mobile Apps Design & Development</li>  
+                <li>Digital Marketing </li>
+            </ul>
+
+          </div>
+          
+        </div>
+      
+    </div>
+

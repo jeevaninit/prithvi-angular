@@ -1,4 +1,13 @@
-<h3>{{contact}}</h3>
-<div *ngFor="let sdata of mypdata">
-    <p>{{sdata}}</p>
-</div>
+<div class="pageheading"><h2>{{contact}}</h2></div>
+
+<div *ngFor="let sdata of mypdata" class="listdiv">
+ 
+    <div>
+        <h3>Company Name: {{sdata.name}}</h3>
+        <p>Address : {{sdata.course}}</p>
+        <p>Phone Number: {{sdata.experience}}</p>
+        <p>Email Id: {{sdata.email}}</p>
+    </div>
+
+    </div>
+

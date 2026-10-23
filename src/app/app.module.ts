@@ -42,11 +42,9 @@ import { GlobaltieupComponent } from './globaltieup/globaltieup.component';
 import { ItproskillsetComponent } from './itproskillset/itproskillset.component';
 import { ChildcommunicationComponent } from './childcommunication/childcommunication.component';
 import { ViewchildComponent } from './viewchild/viewchild.component';
-import { AssignmentComponent } from './assignment/assignment.component';
 import { MenubarComponent } from './menubar/menubar.component';
 import { BannerComponent } from './banner/banner.component';
 import { HeaderformComponent } from './headerform/headerform.component';
-import { ServicesComponent } from './services/services.component';
 import { SideformComponent } from './sideform/sideform.component';
 import { MyoutputdecoratorComponent } from './myoutputdecorator/myoutputdecorator.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -67,14 +65,19 @@ import { BehaviorsubjectComponent } from './behaviorsubject/behaviorsubject.comp
 import { JustsubjectComponent } from './justsubject/justsubject.component';
 import { HeaderContentComponent } from './lalith_angular_201024/header-content/header-content.component';
 import { NavbarlalithComponent } from './navbarlalith/navbarlalith.component';
-import { BodylalithComponent } from './bodylalith/bodylalith.component';
-import { FooterlalithComponent } from './footerlalith/footerlalith.component';
-
+import { MyservicesComponent } from './myservices/myservices.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { IndustriesComponent } from './industries/industries.component';
+import { AboutComponent } from './about/about.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatTableModule} from '@angular/material/table';
+import { FooterComponent } from './components/footer/footer.component';
+import { SarathComponent } from './sarath/sarath.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-
     ContactComponent,
     AttributeBindingComponent,
     StyleBindingComponent,
@@ -104,11 +107,9 @@ import { FooterlalithComponent } from './footerlalith/footerlalith.component';
     ItproskillsetComponent,
     ChildcommunicationComponent,
     ViewchildComponent,
-    AssignmentComponent,
     MenubarComponent,
     BannerComponent,
     HeaderformComponent,
-    ServicesComponent,
     SideformComponent,
     MyoutputdecoratorComponent,
     GlobalDataComponent,
@@ -128,10 +129,12 @@ import { FooterlalithComponent } from './footerlalith/footerlalith.component';
     JustsubjectComponent,
     HeaderContentComponent,
     NavbarlalithComponent,
-    BodylalithComponent,
-    FooterlalithComponent,
-
-
+    MyservicesComponent,
+    TechnologiesComponent,
+    IndustriesComponent,
+    AboutComponent,
+    FooterComponent,
+    SarathComponent,
   ],
   imports: [
     BrowserModule,
@@ -149,7 +152,10 @@ import { FooterlalithComponent } from './footerlalith/footerlalith.component';
       MatIconModule,
       [MatCardModule],
       
-
+      FormsModule, 
+      MatFormFieldModule, 
+      MatInputModule,
+      MatTableModule
    
 
 

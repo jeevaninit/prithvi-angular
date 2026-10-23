@@ -1,7 +1,43 @@
-<div class="bannerbg">
-<h1>FIND AN AWESOME THINGS HERE</h1>
-<p>Find all things you need on DLapak. We give you a simple way.</p>
-<div class="headerform">
-<app-headerform></app-headerform>
+<div class="mycontainer" style="background-color: #eee;">
+<h1 class="stylefont">Transforming Brands with <br>
+    Design & Technology</h1>
+<!-- <ul class="keyfeatures">
+    <li (click)="showpopup()">Branding </li> 
+    <li (click)="showpopup()">UI & UX Designing</li> 
+    <li (click)="showpopup()">Web Designing and Development </li> 
+    <li (click)="showpopup()">Mobile Apps Design & Development</li>  
+    <li (click)="showpopup()">Digital Marketing </li>
+   
+</ul> -->
+
+<ul class="keyfeatures">
+    <li *ngFor="let feature of features" (click)="showpopup(feature)">
+        <img src='{{feature.icon}}' alt="branding" />{{ feature.name }}
+      </li>
+</ul>
+
 </div>
+
+<div class="overlay" *ngIf="show" (click)="closeoverly($event)">
+    <div class="popup">
+
+        <div class="popupheading-caption">
+                    <span (click)="closepopup()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="closeoverly"></mat-icon>
+        </span>
+        <h3>{{ selectedFeature?.name }}</h3>
+        <p>{{ selectedFeature?.description }}</p>
+        </div>
+        <div class="servicelayout">
+        <img src='{{ selectedFeature?.path }}' style="padding: 0px 32px;" />
+
+            <ul class="servicelist">
+            <li *ngFor="let work of selectedFeature?.brandingworks || []">
+              {{ work }}
+            </li>
+          </ul>
+        </div>
+          
+          
+    </div>
 </div>

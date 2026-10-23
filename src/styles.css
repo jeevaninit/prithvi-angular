@@ -2,14 +2,15 @@
 
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-h1 {
-    text-align: right;
-} 
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
 *{
     margin: 0px;
     padding: 0px;
     border: 0px;
     font-family:sitefont;
+    box-sizing: border-box;
 }
 @font-face {
     font-family:sitefont ;
@@ -20,4 +21,132 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .headerlayout {
     background-color: lightseagreen;
     padding: 20px 0px;
+    box-sizing: border-box;
+}
+.listdiv {
+   width: 60%;
+   margin: 30px auto;
+   padding: 30px;
+   border-radius: 10px;
+   border: solid 1px #eee;
+   box-shadow: 0px 0px 5px #eee;
+
+}
+.pageheading {
+    width: 60%;
+    margin: 30px auto;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom: solid 1px #eee;
+    line-height: 40px;
+}
+
+h3 {
+    color: #0000ff;
+}
+h2 {
+    color:#ff0000;
+}
+nav ul li a {
+    text-decoration: none;
+
+    color:#590d22;
+}
+nav ul li:hover {
+border-bottom: 1px solid #0000ff;
+}
+.mycontainer {
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@font-face {
+    font-family: stylefont;
+    src: url(assets/fonts/segoesc.ttf);
+}
+
+.stylefont {
+    font-family: stylefont !important;
+    text-align: center;
+    font-size: 36px !important;
+    line-height: 46px !important;
+    color: #590d22;
+}
+.keyfeatures {
+    color: #2e3192;font-size: 20px;border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+/*     gap: 20px; */
+
+    
+}
+.keyfeatures li {
+
+    padding:10px;
+
+    color: #590d22;
+    border-radius: 50px;
+    margin: 20px 10px;
+    font-size: 14px;
+}
+.keyfeatures li:last-child{
+    border-right: none;
+}
+.keyfeatures li:nth-child(odd){
+       border:solid 1px #ff0000;
+       
+}
+.keyfeatures li:nth-child(even){
+    border:solid 1px #2e3192;
+    
+}
+.footercontainer {
+    background-color: #eee;
+    color: #590d22;
+    padding: 20px 0px;
+    border-top: dotted 1px #fff;
+}
+
+@media(max-width:570px){
+    .keyfeatures {
+       
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+  
+    
+        
+    }
+    .keyfeatures li {
+
+        width: 100%;
+        text-align: center;
+    }
+    .footercontainer {
+        text-align: center;
+    }
+    .menuitems {
+        justify-content: center;
+        align-items: center;
+       gap: 10px;
+    }
+    .menuitemlayout {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .menuitemlayout li{
+        width: 100%;
+        text-align: center;
+        margin: 0px 10px;
+    }
 }

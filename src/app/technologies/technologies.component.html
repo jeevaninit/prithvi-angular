@@ -1,0 +1,13 @@
+<div class="pageheading"><h2>Technologies</h2></div>
+
+
+<div *ngFor="let ulist of technologiesData" class="listdiv">
+    <div>
+        <h3>{{ulist.title}}</h3>
+        <p>{{ulist.description}}</p>
+    </div>
+
+
+</div>
+
+<router-outlet></router-outlet>
